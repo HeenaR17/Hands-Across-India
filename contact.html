@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact us with your suggestions </title>
+	<link rel=" stylesheet" type="text/css" href="css/contstyle.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<img src="logofinal.png">
+			<ul>
+				<li > <a href="#"> Home </a> </li>
+				<li> <a href="services.html"> Services </a> </li>
+				<li> <a href="gallery.html"> Gallery </a> </li>
+				<li> <a href="about.html"> About </a> </li>
+				<li class="active"> <a href="contact.html"> Contact </a> </li>
+			</ul>
+		</div>
+	</header>
+	<div class="wrap3">
+  		<h1>Give us your suggestions here</h1>
+	</div>
+	<div class="wrap">
+		<form id="contact-form" method="post" action="contacthandler.php">
+			<input name="name" type="text" class="formcontrol" placeholder="Your Name" required>
+			<input type="text" class="text-line">
+			<input name="email" type="email" class="formcontrol" placeholder="Your Email" required>
+			<input type="text" class="text-line" />
+			<textarea name="message" class="formcontrol" placeholder="Message" required></textarea>
+			<input type="text" class="text-line" />
+			<input type="submit" value="Send Message">
+			
+		</form>
+	</div>
+</body>
+</html>

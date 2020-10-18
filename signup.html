@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<link rel="stylesheet" type="text/css" href="css/loginstyle.css"></link>
+	<script type="text/javascript">
+		function loadDoc1(){
+			var xmlhttp;
+			if(this.xmlhttpRequest) {
+				xmlhttp = new xmlhttpRequest();
+			} else{
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange = function(){
+				if(xmlhttp.readystate==4){
+					document.getElementById('answer').innerHTML = xmlhttp.responseText;
+				}
+			}
+			xmlhttp.open("GET","golearn.html",true);
+			xmlhttp.send();
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="main">
+			<img src="logofinal.png">
+			<ul>
+				<li> <a href="index.html"> Home </a> </li>
+				<li> <a href="services.html"> Services </a> </li>
+				<li> <a href="gallery.html"> Gallery </a> </li>
+				<li> <a href="about.html"> About </a> </li>
+				<li> <a href="contact.html"> Contact </a> </li>
+			</ul>
+		</div>
+	</header>
+	<div class="wrap2">
+		<h2>Do you wish to learn more about us before signing on?</h2>
+  		<button type="button" onclick="loadDoc1()">Click here</button>
+	</div>
+	<div id="answer" class="wrap3">  </div>
+	<div class="wrap">
+		<h2> SIGN UP HERE </h2>
+		<form method="get" action="thankyou.html">
+			<input type="text" placeholder="First Name.." required>
+			<input type="text" class="text-line" />
+			<input type="text" placeholder="Last Name.." required>
+			<input type="text" class="text-line" />
+			<input type="text" placeholder="Enter your email.." required>
+			<input type="text" class="text-line" />
+			<input type="text" placeholder="Username.." required>
+			<input type="text" class="text-line" />
+			<input type="password"  placeholder="Enter password.." required>
+			<input type="text" class="text-line" />
+			<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
